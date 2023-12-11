@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="468.0" prefWidth="529.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pizza.pizza.SpecialtyController">
+   <children>
+      <RadioButton fx:id="small" layoutX="14.0" layoutY="54.0" mnemonicParsing="false" onAction="#changePriceBasedOnSize" selected="true" text="Small" />
+      <RadioButton fx:id="medium" layoutX="14.0" layoutY="84.0" mnemonicParsing="false" onAction="#changePriceBasedOnSize" text="Medium" />
+      <RadioButton fx:id="large" layoutX="14.0" layoutY="113.0" mnemonicParsing="false" onAction="#changePriceBasedOnSize" text="Large" />
+      <Label layoutX="14.0" layoutY="14.0" text="Pizza Size:" />
+      <ComboBox fx:id="specialtyTypes" layoutX="14.0" layoutY="175.0" onAction="#setType" prefHeight="26.0" prefWidth="172.0" promptText="Select Pizza Type Here" />
+      <CheckBox fx:id="extraCheese" layoutX="236.0" layoutY="93.0" mnemonicParsing="false" onAction="#changePriceBasedOnExtras" text="Extra Cheese" />
+      <CheckBox fx:id="extraSauce" layoutX="234.0" layoutY="138.0" mnemonicParsing="false" onAction="#changePriceBasedOnExtras" text="Extra Sauce" />
+      <ImageView fx:id="imageView" fitHeight="199.0" fitWidth="255.0" layoutX="231.0" layoutY="233.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="orderUp" layoutX="261.0" layoutY="442.0" mnemonicParsing="false" onAction="#placeOrder" text="Place Order" />
+      <ListView fx:id="toppingsList" layoutX="14.0" layoutY="233.0" prefHeight="199.0" prefWidth="200.0" />
+      <Label layoutX="234.0" layoutY="54.0" text="Extras:" />
+      <Label layoutX="33.0" layoutY="446.0" text="Price: $" />
+      <TextField fx:id="priceField" editable="false" layoutX="81.0" layoutY="442.0" />
+      <Label layoutX="223.0" layoutY="179.0" text="Sauce: " />
+      <Label fx:id="sauceLabel" layoutX="267.0" layoutY="179.0" text="xxx" />
+   </children>
+</AnchorPane>
